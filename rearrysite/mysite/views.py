@@ -6,4 +6,4 @@ def index(request):
     context = {
         "title": "Really origin site"
     }
-    return render(request, "mysite/index.html", {})
+    return render(request, "mysite/index.html", context)
