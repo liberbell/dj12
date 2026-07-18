@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'livereload.middleware.LiveReloadScript',
 ]
 
+
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
