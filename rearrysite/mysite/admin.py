@@ -25,5 +25,14 @@ class CustomUserAdmin(UserAdmin):
     ordering = ()
     filter_horizontal = ()
     
+    add_fieldsets = (
+        (None, {
+            'fields' : (
+                'email',
+                'password',
+            ),
+        }),
+    )
+    
 admin.site.unregister(Group)
 admin.site.register(User, CustomUserAdmin)
