@@ -34,3 +34,10 @@ class User(AbstractBaseUser):
     
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
+    
+    def __str__(self):
+        return self.email
+    
+    def has_parm(self):
+        "Does the user have a specific permission?"
+        return True
