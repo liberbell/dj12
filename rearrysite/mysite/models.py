@@ -45,3 +45,8 @@ class User(AbstractBaseUser):
     def has_module_parms(self):
         "Does the user have permissions to view the app `app_label?`"
         return True
+    
+    @property
+    def is_staff(self):
+        "Is the user a member of staff?"
+        return self.is_admin
