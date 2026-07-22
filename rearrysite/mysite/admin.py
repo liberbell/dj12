@@ -18,3 +18,8 @@ class CustomUserAdmin(UserAdmin):
             )
         })
     )
+    
+    list_display = ('email', 'is_active')
+    list_filter = ()
+    ordering = ()
+    filter_horizontal = ()
