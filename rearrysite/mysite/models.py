@@ -38,11 +38,11 @@ class User(AbstractBaseUser):
     def __str__(self):
         return self.email
     
-    def has_parms(self):
+    def has_perms(self, perm, obj=None):
         "Does the user have a specific permission?"
         return True
     
-    def has_module_parms(self):
+    def has_module_perms(self, app_label):
         "Does the user have permissions to view the app `app_label?`"
         return True
     
