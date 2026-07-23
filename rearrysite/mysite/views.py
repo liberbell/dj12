@@ -7,6 +7,6 @@ def index(request):
     objs = Article.objects.all()
     context = {
         "title": "Really origin site",
-        "Articles": objs,
+        "articles": objs,
     }
     return render(request, "mysite/index.html", context)
