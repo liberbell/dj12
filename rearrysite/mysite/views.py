@@ -4,7 +4,9 @@ from blog.models import Article
 
 # Create your views here.
 def index(request):
+    objs = Article.objects.all()
     context = {
-        "title": "Really origin site"
+        "title": "Really origin site",
+        "Articles": objs,
     }
     return render(request, "mysite/index.html", context)
