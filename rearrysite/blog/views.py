@@ -5,4 +5,4 @@ from django.http import HttpResponse
 def article(request):
     context = {}
     
-    return render(request, "blog/index.html")
+    return render(request, "blog/article.html", context=context)
