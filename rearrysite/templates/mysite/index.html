@@ -45,10 +45,12 @@
 
                 {% for obj in articles %}
                     <div class="blog-post">
-                        <h2 class="blog-post-title">{{ obj.title }}</h2>
-                        <p class="blog-post-meta">{{ obj.created_at }} by <a href="#">{{ obj.author }}</a></p>
+                        <a href="/blog">
+                            <h2 class="blog-post-title">{{ obj.title }}</h2>
+                            <p class="blog-post-meta">{{ obj.created_at }} by <a href="#">{{ obj.author }}</a></p>
 
-                        <p>{{ obj.text }}</p>
+                            <p>{{ obj.text }}</p>
+                        </a>
                     </div>
                     
                 {% endfor %}
