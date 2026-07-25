@@ -45,7 +45,7 @@
 
                 {% for obj in articles %}
                     <div class="blog-post">
-                        <a href="/blog">
+                        <a href="/blog/{{ obj.id }}">
                             <h2 class="blog-post-title">{{ obj.title }}</h2>
                             <p class="blog-post-meta">{{ obj.created_at }} by <a href="#">{{ obj.author }}</a></p>
 
