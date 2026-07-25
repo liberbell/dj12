@@ -5,6 +5,7 @@ from blog.models import Article
 # Create your views here.
 def article(request, pk):
     obj = Article.objects.get(pk=pk)
+    print(obj)
     context = {
         "article": obj,
     }
