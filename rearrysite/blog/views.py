@@ -8,7 +8,7 @@ def index(request):
     paginator = Paginator(objs, 2)
     page_number = request.Get.get("page")
     context = {
-        "page_objs": paginator.get_page(page_number),
+        "page_obj": paginator.get_page(page_number),
         "page_number": page_number,
     }
     
