@@ -6,7 +6,7 @@ from blog.models import Article
 def index(request):
     objs = Article.objects.all()
     context = {
-        "objs": objs,
+        "articles": objs,
     }
     
     return render(request, "blog/blogs.html", context=context)
