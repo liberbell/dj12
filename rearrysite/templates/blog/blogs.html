@@ -32,16 +32,11 @@
                             </span>
 
                             {% if page_obj.has_next %}
-                                <a href="?page={{ page_obj.next_page_number }}">Nexxt</a>
-                                <a href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
+                                <a class="btn btn-outline-primary" href="?page={{ page_obj.next_page_number }}">Nexxt</a>
+                                <a class="btn btn-outline-primary" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
                             {% endif %}
                         </span>
                     </div>
-                </nav>
-
-                
-                    <a class="btn btn-outline-primary" href="#">Old Article</a>
-                    <a class="btn btn-outline-secondary disabled" href="#">New Article</a>
                 </nav>
             </div>
 
