@@ -8,7 +8,7 @@
 
             {% if page_obj.has_next %}
                 <a class="btn btn-outline-primary" href="?page={{ page_obj.next_page_number }}">next</a>
-                <a class="btn btn-outline-primary" href="?page={{ page_obj.previous_page_number }}">last &raquo;</a>
+                <a class="btn btn-outline-primary" href="?page={{ page_obj.paginator_num_pages }}">last &raquo;</a>
             {% endif %}
         </span>
     </div>
