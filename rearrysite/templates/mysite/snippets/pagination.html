@@ -5,7 +5,11 @@
                 <a class="btn btn-outline-primary" href="?page=1">&laquo;first</a>
                 <a class="btn btn-outline-primary" href="?page={{ page_obj.previous_page_number }}">previous</a>
             {% endif %}
+
+            {% if page_obj.has_next %}
+                <a class="btn btn-outline-primary" href="?page={{ page_obj.next_page_number }}">next</a>
+                <a class="btn btn-outline-primary" href="?page={{ page_obj.previous_page_number }}">last &raquo;</a>
+            {% endif %}
         </span>
     </div>
-    <a class="btn btn-outline-primary" href="/blog/">All Blog</a>
 </nav>
