@@ -12,4 +12,8 @@ def index(request):
     return render(request, "mysite/index.html", context)
 
 def login(request):
-    pass
+    context = {
+        
+    }
+    
+    return render(request, "mysite/login.html", contextds)
