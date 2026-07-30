@@ -16,4 +16,4 @@ def login(request):
         
     }
     
-    return render(request, "mysite/login.html", contextds)
+    return render(request, "mysite/login.html", context)
