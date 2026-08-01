@@ -9,6 +9,13 @@
             </div>
 
             <div class="col-lg-3 m-auto">
+                
+                {% if user.is_authenticated %}
+                    <h2>Under login</h2>
+                {% else %}
+                    <h2>not login</h2>    
+                {% endif %}
+                    
                 <form class="form-signin mx-4" action="" method="post">
                     {% csrf_token %}
                     <div class="text-center">
