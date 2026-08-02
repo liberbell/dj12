@@ -31,3 +31,4 @@ def signup(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
+            user.is_active = False
