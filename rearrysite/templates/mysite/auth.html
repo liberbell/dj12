@@ -22,7 +22,9 @@
                         <h1 class="h5 my-4">
                             
                             {% if "login" in request.path %}
-                                
+                                Login
+                            {% elif "signup" in request.path %}
+                                New register
                             {% endif %}
                                 
                         </h1>
