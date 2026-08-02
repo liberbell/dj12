@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.views import LoginView
 from blog.models import Article
+from mysite.forms import UserCreationForm
 
 # Create your views here.
 def index(request):
@@ -22,3 +23,9 @@ def index(request):
 
 class Login(LoginView):
     template_name = "mysite/login.html"
+    
+def signup(request):
+    context = {}
+    
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
