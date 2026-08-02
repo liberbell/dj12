@@ -31,7 +31,13 @@
                     </div>
 
                     <div class="form-label-group my-3">
-                        <input type="email" name="username" id="id_email" class="form-control" placeholder="Email address" required autofocus>
+                        <input type="email" name="
+                        {% if 'login' in request.path %}
+                            username
+                        {% elif 'signup' in request.path %}
+                            email
+                        {% endif %}"
+                        id="id_email" class="form-control" placeholder="Email address" required autofocus>
                     </div>
 
                     <div class="form-label-group my-3">
