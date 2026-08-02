@@ -26,3 +26,4 @@ def signup(request):
             user.save()
             
     return render(request, "mysite/auth.html", context)
+
