@@ -22,7 +22,7 @@ def index(request):
 #     return render(request, "mysite/login.html", context)
 
 class Login(LoginView):
-    template_name = "mysite/login.html"
+    template_name = "mysite/auth.html"
     
 def signup(request):
     context = {}
