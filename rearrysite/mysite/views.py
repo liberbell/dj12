@@ -12,15 +12,6 @@ def index(request):
     }
     return render(request, "mysite/index.html", context)
 
-# def login(request):
-#     context = {
-        
-#     }
-#     if request.method == "POST":
-#         context["req"] = request.POST
-    
-#     return render(request, "mysite/login.html", context)
-
 class Login(LoginView):
     template_name = "mysite/auth.html"
     
