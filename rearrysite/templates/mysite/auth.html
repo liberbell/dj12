@@ -16,18 +16,10 @@
                     <h2>not login</h2>    
                 {% endif %}
                     
-                <form class="form-signin mx-4" action="" method="post">
+                <form class="form-signin mx-4" action="">
                     {% csrf_token %}
                     <div class="text-center">
-                        <h1 class="h5 my-4">
-                            
-                            {% if "login" in request.path %}
-                                Login
-                            {% elif "signup" in request.path %}
-                                New register
-                            {% endif %}
-                                
-                        </h1>
+
                     </div>
 
                     <div class="form-label-group my-3">
