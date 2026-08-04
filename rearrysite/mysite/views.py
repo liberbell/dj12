@@ -24,6 +24,9 @@ def signup(request):
             user = form.save(commit=False)
             user.is_active = False
             user.save()
+            print("no error")
             return redirect("/")
+        else:
+            print("error1")
     return render(request, "mysite/auth.html", context)
 
