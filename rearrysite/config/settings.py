@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib import messages
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -134,3 +135,8 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_URL = '/logout/'
 
 LOGOUT_REDIRECT_URL = '/login/'
+
+MESSAGE_TAGS = {
+    messages.ERROR: "rounded-0 alert alert-danger",
+    messages.WARNING: "rounded-0 alert alert-warning",
+}
