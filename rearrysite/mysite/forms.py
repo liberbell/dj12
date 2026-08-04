@@ -9,7 +9,7 @@ class UserCreationForm(forms.ModelForm):
         fields = ("email", )
         
     def clean_password(self):
-        password = self.cleaned_data.get["password"]
+        password = self.cleaned_data.get("password")
         return password
     
     def save(self, commit=True):
