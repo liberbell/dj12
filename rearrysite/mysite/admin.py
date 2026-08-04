@@ -36,6 +36,7 @@ class CustomUserAdmin(UserAdmin):
             ),
         }),
     )
+add_form = UserCreationForm
     
 admin.site.unregister(Group)
 admin.site.register(User, CustomUserAdmin)
